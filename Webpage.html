@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+
+<style type="text/css">
+body {
+  background-color: blue;
+  }
+ 
+   h2{
+  text-align:center;
+  color: white;
+  font-size: 80px;
+  }
+  .marquee {
+        margin: 0 auto;
+        width: 400px;
+        height: 30px;
+        white-space: nowrap;
+       
+        box-sizing: border-box;
+        position: relative;
+      }
+      .marquee__content {
+         width: 300%;
+         display: flex;
+         line-height: 30px;
+         animation: marquee 5s linear infinite forwards;
+      }
+      .marquee__content:hover {
+        animation-play-state: paused;
+      }
+        .list-inline {
+        display: flex;
+        justify-content: space-around;
+        width: 33.33%;
+        /* reset list */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+       @keyframes marquee {
+        0% {
+          transform: translateX(2);
+        }
+        100% {
+          transform: translateX(-66.6%);
+        }
+      }
+</style>
+<body>
+<div>
+<h2>Disbursement AUS-2021</h2>
+</div>
+<div class="marquee">
+<div class="marquee__content">
+<marquee behavior="alternate" style="text-align: center;font-size:80px;color: white;">
+<h1 style="font-size:80px;text-align: center;color: white;">Hello</h1>
+</marquee>
+</div>
+</div>
+</body>
+
+</html>
